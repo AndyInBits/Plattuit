@@ -1,5 +1,7 @@
 from rest_framework import serializers
+
 from .models import MicroblogPost
+
 
 class MicroblogpostSerializer(serializers.ModelSerializer):
     class Meta:

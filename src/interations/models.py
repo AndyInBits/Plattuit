@@ -1,6 +1,8 @@
 from django.db import models
+
 from microblogs.models import MicroblogPost
 from users.models import MyUserProfile
+
 
 class Like(models.Model):
     user = models.ForeignKey(MyUserProfile, on_delete=models.CASCADE)

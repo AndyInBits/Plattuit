@@ -1,5 +1,7 @@
 from django.db import models
+
 from users.models import MyUserProfile
+
 
 class MicroblogPost(models.Model):
     user = models.ForeignKey(MyUserProfile, on_delete=models.CASCADE)

@@ -1,5 +1,7 @@
 from django.db import models
+
 from microblogs.models import MicroblogPost
+
 
 class PostView(models.Model):
     post = models.ForeignKey(MicroblogPost, on_delete=models.CASCADE)
