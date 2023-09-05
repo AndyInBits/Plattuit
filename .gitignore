@@ -19,3 +19,6 @@ celerybeat-schedule
 .DS_store
 *.ipynb
 *.ipynb_checkpoints/
+
+db/*
+db

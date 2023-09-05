@@ -60,8 +60,8 @@ THIRD_PARTY_APPS = [
     "corsheaders",
     "django_extensions",
 ]
-# local apps
-LOCAL_APPS = []
+# local apps"
+LOCAL_APPS = ["microblogs", "interations", "trackings", "users"]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 

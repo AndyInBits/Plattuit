@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class MicroblogConfig(AppConfig):
+class TrakingsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'microblogs'
+    name = 'trackings'
