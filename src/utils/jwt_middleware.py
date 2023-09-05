@@ -9,6 +9,7 @@ class JWTUserMiddleware:
 
     def __call__(self, request):
         jwt_auth = JWTAuthentication()
+        print(jwt_auth.authenticate(request))
         user, _ = jwt_auth.authenticate(request)
 
         if user:

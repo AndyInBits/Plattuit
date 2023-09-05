@@ -12,7 +12,7 @@ class HealthCheck(APIView):
     def get(self, request, format=None):
         return Response("OK", status=status.HTTP_200_OK)
 
-@permission_classes([IsAuthenticated])
+
 class MicroblogpostListCreateView(APIView):
     def get(self, request):
         microblogposts = MicroblogPost.objects.all()
