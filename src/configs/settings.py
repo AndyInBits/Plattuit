@@ -59,6 +59,7 @@ THIRD_PARTY_APPS = [
     "rest_framework",
     "corsheaders",
     "django_extensions",
+    "rest_framework_simplejwt",
 ]
 # local apps"
 LOCAL_APPS = ["microblogs", "interations", "trackings", "users"]

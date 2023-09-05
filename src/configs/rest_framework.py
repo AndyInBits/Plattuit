@@ -1,3 +1,8 @@
 REST_FRAMEWORK = {
-    # "DEFAULT_PAGINATION_CLASS": "utils.pagination.CustomPagination",
-    }
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
