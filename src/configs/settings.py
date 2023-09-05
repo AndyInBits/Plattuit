@@ -155,21 +155,3 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # https://docs.djangoproject.com/en/4.1.9/howto/static-files/
 
 STATIC_URL = "/static/"
-
-
-
-# Celery
-
-CELERY_BROKER_URL = "sqs://{}:{}@".format(
-    quote_plus(AWS_ACCESS_KEY_ID), quote_plus(AWS_SECRET_ACCESS_KEY)
-)
-CELERY_BROKER_TRANSPORT = "sqs"
-CELERY_BROKER_TRANSPORT_OPTIONS = {
-    "region": "us-east-1",
-}
-CELERY_TASK_DEFAULT_QUEUE = env("CELERY_TASK_DEFAULT_QUEUE", default="peiky-qa")
-CELERY_BROKER_TRANSPORT_OPTIONS = {"region": env("AWS_REGION", default="us-east-1")}
-CELERY_ACCEPT_CONTENT = ["application/json"]
-CELERY_TASK_SERIALIZER = "json"
-CELERY_RESULT_SERIALIZER = "json"
-CELERY_TIMEZONE = "America/Bogota"
